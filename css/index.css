@@ -210,3 +210,59 @@ a {
         border-bottom: 3px solid #2c3e50;
     }
 }
+
+/* Styling for Message Form */
+#leave-message form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#leave-message input, 
+#leave-message textarea {
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem; /* Better for mobile tapping */
+}
+
+#leave-message button {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#leave-message button:hover {
+    background-color: #007bff;
+}
+
+/* Styling for the Message List */
+#messages li {
+    list-style: none;
+    background: #f8f9fa;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#messages button {
+    margin-left: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
