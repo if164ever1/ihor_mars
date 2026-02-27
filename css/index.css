@@ -110,15 +110,27 @@ h2 {
 .project-list {
     padding: 0;
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
 
 .project-list li {
     background-color: #ffffff;
     border: 1px solid #ddd;
     padding: 20px;
-    margin-bottom: 20px;
     border-radius: 8px;
     transition: transform 0.2s;
+    
+    /* THE FIX: Stack the contents vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: space-between;
+}
+
+.project-list li .project-link {
+    margin-top: auto; 
 }
 
 .project-list li:hover {
@@ -266,3 +278,4 @@ a {
 html {
     scroll-behavior: smooth;
 }
+
